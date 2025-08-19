@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+  <div class="container-bg">
+    <div class="container">
+      <div class="left">
+        <div class="shopping-cart">
+          <h2>Shopping Continue</h2>
+          <hr>
+        </div>
+        <div class="container-cart">
+          <h3>Shopping cart</h3>
+          <p>You have 3 item in your cart</p>
+          <div class="carts">
+            <div class="cart-item">
+              <div class="item-details">
+                <img src="./assets/img1.png" alt="Italy Pizza">
+                <div>
+                  <h3 class="item-name">Italy Pizza</h3>
+                  <p class="item-description">Extra cheese and topping</p>
+                </div>
+              </div>
+              <div class="bottom-row">
+
+                <div class="item-controls">
+                  <div class="quantity-control">
+                    <button class="quantity-btn minus">-</button>
+                    <span class="quantity">1</span>
+                    <button class="quantity-btn plus">+</button>
+                  </div>
+                </div>
+                <div class="item-prices">
+                  <p class="price">€6.01</p>
+                  <button class="delete-btn">
+                    <svg width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <polyline points="3,6 5,6 21,6"></polyline>
+                      <path d="m19,6v14a2,2 0 0,1 -2,2H7a2,2 0 0,1 -2,-2V6m3,0V4a2,2 0 0,1 2,-2h4a2,2 0 0,1 2,2v2">
+                      </path>
+                      <line x1="10" y1="11" x2="10" y2="17"></line>
+                      <line x1="14" y1="11" x2="14" y2="17"></line>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="cart-item">
+              <div class="item-details">
+                <img src="./assets/img1.png" alt="Italy Pizza">
+                <div>
+                  <h3 class="item-name">Italy Pizza</h3>
+                  <p class="item-description">Extra cheese and topping</p>
+                </div>
+              </div>
+              <div class="bottom-row">
+
+                <div class="item-controls">
+                  <div class="quantity-control">
+                    <button class="quantity-btn minus">-</button>
+                    <span class="quantity">1</span>
+                    <button class="quantity-btn plus">+</button>
+                  </div>
+                </div>
+                <div class="item-prices">
+                  <p class="price">€6.01</p>
+                  <button class="delete-btn">
+                    <svg width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <polyline points="3,6 5,6 21,6"></polyline>
+                      <path d="m19,6v14a2,2 0 0,1 -2,2H7a2,2 0 0,1 -2,-2V6m3,0V4a2,2 0 0,1 2,-2h4a2,2 0 0,1 2,2v2">
+                      </path>
+                      <line x1="10" y1="11" x2="10" y2="17"></line>
+                      <line x1="14" y1="11" x2="14" y2="17"></line>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="cart-item">
+              <div class="item-details">
+                <img src="./assets/img1.png" alt="Italy Pizza">
+                <div>
+                  <h3 class="item-name">Italy Pizza</h3>
+                  <p class="item-description">Extra cheese and topping</p>
+                </div>
+              </div>
+              <div class="bottom-row">
+
+                <div class="item-controls">
+                  <div class="quantity-control">
+                    <button class="quantity-btn minus">-</button>
+                    <span class="quantity">1</span>
+                    <button class="quantity-btn plus">+</button>
+                  </div>
+                </div>
+                <div class="item-prices">
+                  <p class="price">€6.01</p>
+                  <button class="delete-btn">
+                    <svg width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <polyline points="3,6 5,6 21,6"></polyline>
+                      <path d="m19,6v14a2,2 0 0,1 -2,2H7a2,2 0 0,1 -2,-2V6m3,0V4a2,2 0 0,1 2,-2h4a2,2 0 0,1 2,2v2">
+                      </path>
+                      <line x1="10" y1="11" x2="10" y2="17"></line>
+                      <line x1="14" y1="11" x2="14" y2="17"></line>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <div class="card-container">
+          <div class="card-details">
+            <h2>Card Details</h2>
+            <img src="./assets/me.jpg" alt="Italy Pizza">
+          </div>
+          <div class="card-type">
+            <p>Card type</p>
+            <div class="card-type-img">
+              <img src="./assets/type1.png" alt="">
+              <img src="./assets/type2.png" alt="">
+              <img src="./assets/type3.png" alt="">
+              <img src="./assets/type4.png" alt="">
+            </div>
+          </div>
+          <form id="form-card">
+            <div class="form-group">
+              <label for="card-name">Name on card</label>
+              <input type="text" id="card-name" name="name" required />
+            </div>
+            <div class="form-group">
+              <label for="card-id">Card Number</label>
+              <input type="text" id="card-id" name="cardId" required />
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="card-birth">Expiration date</label>
+                <input type="date" id="card-birth" name="birth" required />
+              </div>
+              <div class="form-group">
+                <label for="card-cvv">CVV</label>
+                <input type="tel" id="card-cvv" name="cvv" required />
+              </div>
+            </div>
+            <!-- tom tat gio hang -->
+            <div class="cart-summary">
+              <div class="summary-row">
+                <span>Subtotal:</span>
+                <span id="subtotal">0₫</span>
+              </div>
+              <div class="summary-row">
+                <span>shipping:</span>
+                <span id="shipping">0₫</span>
+              </div>
+              <div class="summary-row total">
+                <span>Total (Tax incl.):</span>
+                <span id="total">0₫</span>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary">
+              <p>$1,672</p>
+              <p>Checkout</p>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+
+</html>

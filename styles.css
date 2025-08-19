@@ -1,0 +1,312 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Nunito:wght@300;400;600;700&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+* {
+  margin    : 0;
+  padding   : 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin : 0;
+  padding: 0;
+  color  : #1E1E1E;
+}
+
+h2 {
+  font-weight: 600;
+  font-size  : 18px;
+}
+
+h3 {
+  font-weight: 500;
+  font-size  : 18px;
+}
+
+p {
+  font-family: "Nunito", sans-serif;
+  font-weight: 500;
+  font-size  : 14px;
+}
+
+
+
+.container-bg {
+  background-color: #729bff;
+  display         : flex;
+  justify-content : center;
+  align-items     : center;
+  padding: 55px;
+  /* height          : 100vh; */
+}
+
+.container {
+  display      : flex;
+  width        : 80%;
+  /* chiếm 80% màn hình */
+  max-width    : 1200px;
+  /* không quá 1200px */
+  min-height   : 600px;
+  border-radius: 5px;
+  background   : white;
+  padding      : 40px 20px;
+  gap          : 20px;
+}
+
+
+.container .left {
+  flex   : 2;
+  padding: 15px;
+
+}
+
+.shopping-cart hr {
+  margin: 20px 0;
+}
+
+.carts {
+  margin-top: 20px;
+}
+
+.cart-item {
+  display        : flex;
+  justify-content: space-between;
+  align-items    : center;
+
+  margin-bottom: 20px;
+
+  padding      : 16px;
+  border       : 1px solid #f0f0f0;
+  border-radius: 5px;
+  box-shadow   : 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+.cart-item:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+
+}
+
+.cart-item img {
+  max-width : 80px;
+  max-height: 82px;
+}
+
+.cart-item .item-details {
+  display    : flex;
+  gap        : 20px;
+  align-items: center;
+}
+
+.cart-item .bottom-row {
+  display        : flex;
+  justify-content: space-between;
+  align-items    : center;
+  width          : 45%;
+}
+
+.cart-item .item-controls {
+  display    : flex;
+  align-items: center;
+  gap        : 20px;
+
+}
+
+.cart-item .item-prices {
+  display    : flex;
+  align-items: center;
+  gap        : 30px;
+}
+
+
+.cart-item .item-controls .quantity-control button,
+.cart-item .item-controls .quantity-control .quantity {
+  padding: 5px 10px;
+}
+
+.cart-item .delete-btn {
+  border    : none;
+  background: white;
+}
+
+.container .right {
+  flex            : 1;
+  background-color: #565ABB;
+
+  padding      : 15px;
+  border-radius: 20px;
+}
+
+.container .right h2 {
+  color    : white;
+  font-size: 22px;
+}
+
+.container .right p {
+  color      : white;
+  font-size  : 16px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 500;
+}
+
+.container .right label {
+  color    : white;
+  font-size: 14px;
+}
+
+.card-container {
+  display       : flex;
+  flex-direction: column;
+  gap           : 15px;
+}
+
+.card-details {
+  display        : flex;
+  justify-content: space-between;
+  align-items    : center;
+}
+
+.card-details img {
+  max-width    : 50px;
+  max-height   : 50px;
+  border-radius: 8px;
+}
+.card-tyle{
+  margin-bottom: 15px;
+}
+.card-type-img {
+  margin-top: 15px;
+
+  display        : flex;
+  justify-content: space-between;
+  gap            : 10px;
+}
+
+.card-type-img img {
+  max-width : 75px;
+  max-height: 55px;
+}
+
+/* form */
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display      : block;
+  margin-bottom: 5px;
+  font-weight  : 500;
+  color        : #333;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width        : 100%;
+  padding      : 10px;
+  border       : 2px solid #ddd;
+  border-radius: 5px;
+  font-size    : 14px;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline     : none;
+  border-color: #667eea;
+}
+
+.form-row {
+  display: flex;
+  gap    : 15px;
+}
+
+.form-row .form-group {
+  flex: 1;
+}
+.btn-primary{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 15px 20px;
+  border-radius: 12px;
+  border: none;
+  background-color:#4DE1C1 ;
+  color: white;
+}
+/* form */
+.summary-row{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.summary-row span {
+  color: white;
+  font-size: 14px;
+}
+
+
+/* tablet */
+@media (max-width: 1145px) {
+  .container {
+    display       : flex;
+    flex-direction: column;
+  }
+
+  .card-type-img img {
+    min-width : 22%;
+    min-height: 80px;
+  }
+}
+
+/* mobie */
+@media (max-width: 768px) {
+  .container {
+    display       : flex;
+    flex-direction: column;
+  }
+
+  .cart-item {
+    display       : flex;
+    flex-direction: column;
+    align-items   : start;
+    gap           : 20px;
+
+  }
+
+  /* Gom controls và prices vào 1 hàng */
+  .cart-item .item-controls,
+  .cart-item .item-prices {
+    display    : flex;
+    align-items: center;
+  }
+
+  /* Bọc controls và prices vào cùng 1 hàng */
+  .cart-item {
+    /* Trick: dùng wrap */
+  }
+
+  .cart-item .bottom-row {
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+    width          : 100%;
+    gap            : 10px;
+  }
+
+  .card-type-img img {
+    min-width : 22%;
+    min-height: 80px;
+  }
+
+
+}
