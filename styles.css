@@ -96,8 +96,8 @@ p {
 }
 
 .cart-item img {
-  max-width : 80px;
-  max-height: 82px;
+  width : 80px;
+  height: 82px;
 }
 
 .cart-item .item-details {
